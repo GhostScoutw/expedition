@@ -3,6 +3,10 @@ execute unless entity @n[tag=encounter_point,distance=..8] run scoreboard player
 execute if score @s ex.spawner.timer matches 0 unless entity @a[distance=..8] run function ex:spawner/spawn
 
 
-tp @s ~ ~ ~ ~1 ~
+tp @s ~ ~ ~ ~5 ~
 
 particle flame ^ ^0.5 ^8
+particle flame ^ ^0.5 ^-8
+
+particle flame ^8 ^0.5 ^
+particle flame ^-8 ^0.5 ^
