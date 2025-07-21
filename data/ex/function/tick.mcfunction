@@ -5,3 +5,5 @@ execute as @e[type=marker,tag=weapon.tip] at @s run function ex:character/weapon
 execute as @e[type=item_display,tag=character] at @s run function ex:character/tick
 
 execute as @e[type=block_display,tag=menu] at @s run function ex:menu/tick
+
+execute as @e[type=item_display,tag=spawner] at @s run function ex:spawner/tick
