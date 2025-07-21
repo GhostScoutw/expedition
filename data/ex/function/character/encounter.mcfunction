@@ -1,0 +1,1 @@
+function ex:player/menu/input_check

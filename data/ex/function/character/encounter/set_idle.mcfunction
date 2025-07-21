@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.gustave.root] run function animated_java:gustave/animations/idle.turn/play
