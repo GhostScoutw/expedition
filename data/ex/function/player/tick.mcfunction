@@ -6,6 +6,9 @@ execute as @e[type=item_display,tag=character] if score @s ex.generic.id = @p[ta
 execute as @e[type=block_display,tag=character.camera] if score @s ex.generic.id = @p[tag=this.player] ex.generic.id run tag @s add this.camera
 execute as @e[type=block_display,tag=menu] if score @s ex.generic.id = @p[tag=this.player] ex.generic.id run tag @s add these.menu
 
+execute unless entity @s[tag=spec_block] run gamemode spectator
+
+execute unless entity @n[tag=this.character] at @s positioned 0 62 0 run function animated_java:gustave/summon
 
 execute if entity @s[gamemode=spectator] run function ex:player/spectator
 
